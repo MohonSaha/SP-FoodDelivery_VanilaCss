@@ -1,0 +1,75 @@
+/* CSS resets  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables  */
+:root {
+    --navbar-height: 59px;
+    --primary-color: skyblue;
+    /* --secondary-color: ; */
+    --black: black;
+    --white: white;
+    --button-color: ;
+    --background-color: ;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar: logo and image  */
+
+#logo{
+    margin: 5px 38px;
+}
+
+#logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 0px 12px;
+}
+
+/* Navigation bar: list style  */
+#navbar{
+    position: relative;  /* this relative position denotes that it will take the height of the maximum height of any element in this div or area */
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: var(--black);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 22px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: var(--black) ;
+    background-color: var(--white);
+    transition-duration: 1s;
+    transform: scale(1.04);
+}
+
