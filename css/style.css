@@ -64,6 +64,7 @@
     padding: 3px 22px;
     border-radius: 22px;
     color: white;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 #navbar ul li a:hover{
@@ -90,12 +91,41 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.89;
+    opacity: 0.9;
 }
 
 #home h1 {
     color: var(--white);
     text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Utility class  */
+.h-primary{
     font-size: 2.8rem;
     padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    margin: 22px ;
+    color: var(--white);
+    background-color: purple;
+    border: 2px solid var(--white);
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition-duration: 1s;
+    transform: scale(1.04);
 }
