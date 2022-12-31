@@ -7,11 +7,12 @@
 /* CSS Variables  */
 :root {
     --navbar-height: 59px;
-    --primary-color: skyblue;
     --black: black;
     --white: white;
-    --button-color: ;
-    --background-color: ;
+}
+
+body{
+    background-color: rgb(236, 209, 235);
 }
 
 /* Navigation bar */
@@ -79,7 +80,7 @@
 }
 
 /* Home Section  */
-#home{
+#home-section{
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
@@ -88,7 +89,7 @@
     height: 400px;
 }
 
-#home::before{
+#home-section::before{
     content: "";
     position: absolute;
     background: url('../bg1.jpg') no-repeat center center/cover;
@@ -100,13 +101,13 @@
     left: 0px;
 }
 
-#home h1 {
+#home-section h1 {
     color: var(--white);
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
 
-#home p {
+#home-section p {
     color: var(--white);
     text-align: center;
     font-size: 1.5rem;
@@ -114,7 +115,7 @@
 }
 
 /* Services Section  */
-.services-container{
+.services-section{
     margin-top: 140px;
 }
 
@@ -155,8 +156,9 @@
 /* Client Section  */
 
 #client-section{
-    height: 344px;
-    margin-top: 80px;
+    /* height: 344px; */
+    
+    margin: 120px 0px;
 }
 
 #client-section::before{
