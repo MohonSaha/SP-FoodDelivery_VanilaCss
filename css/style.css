@@ -151,14 +151,38 @@
 #services .box p{
     font-family: 'Balsamiq Sans', cursive;
 }
-.services{}
-.services{}
-.services{}
 
+/* Client Section  */
 
+#client-section{
+    height: 344px;
+    margin-bottom: 300px;
+}
 
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg);
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.45;
+}
 
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+
+}
 
 /* Utility class  */
 .h-primary{
