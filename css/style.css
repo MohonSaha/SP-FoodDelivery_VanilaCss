@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* CSS Variables  */
 :root {
     --navbar-height: 59px;
@@ -17,9 +21,26 @@ body{
 
 /* Navigation bar */
 #navbar{
+    position: relative;  /* this relative position denotes that it will take the height of the maximum height of any element in this div or area */
+    top: 0px;
     display: flex;
     align-items: center;
+
 }
+
+/* Create background  */
+#navbar::before{
+    content: "";
+    background-color: var(--black);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+
 
 /* Navigation bar: logo and image  */
 
@@ -36,27 +57,12 @@ body{
 }
 
 /* Navigation bar: list style  */
-#navbar{
-    position: relative;  /* this relative position denotes that it will take the height of the maximum height of any element in this div or area */
-
-}
 
 #navbar ul{
     display: flex;
 }
 
-/* Create background  */
-#navbar::before{
-    content: "";
-    background-color: var(--black);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.4;
-    top: 0px;
-    left: 0px;
-}
+
 
 #navbar ul li{
     list-style: none;
@@ -87,6 +93,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 400px;
+    
 }
 
 #home-section::before{
@@ -225,10 +232,6 @@ body{
     font-size: 1.1rem;
     font-family: 'Bree Serif', serif;
 }
-
-
-
-
 
 
 footer{
